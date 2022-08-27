@@ -10,14 +10,14 @@
 
 .grid-container {
     display: grid; 
-    grid-auto-columns: 1fr; 
+    /* grid-auto-columns: 1fr;  */
     grid-template-columns: 1fr; 
     grid-template-rows: 0.2fr 1.7fr 1.7fr 1.7fr 0.4fr; 
-    gap: 0px 0px; 
+    /* gap: 0px 0px;  */
     grid-template-areas: 
       "nav"
       "section1"
-      "section2"
+      "section-two"
       "section3"
       "footer"; 
   }
@@ -26,9 +26,11 @@
 }
   .section1{
      grid-area: section1;
+     background-color: #00000094;
+     z-index: 10;
 }
-  .section2{
-     grid-area: section2; 
+  .section-two{
+     grid-area: section-two; 
 }
   .section3{
      grid-area: section3; 
@@ -51,49 +53,58 @@ body{
 }
 
 /* MAIN */
-.section1 video{
+
+.contenedor{
+    position: relative;
     max-width: 100%;
+    max-height: 100%;
 }
 
-.gradient-video{
-    background-color: #00000094;
-    width: 100%;
-    height: 428px;
-    position: absolute;
-    z-index: 20;
-}
-
-.tittle-position{
+.contenedor video{
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
     display: inline-block;
+}
+
+.i-wont{
     position: absolute;
-    z-index: 21;
-    top: 285px;
+    top: 60%;
 }
 
-.tittle-position h1{
+.i-wont ul{
+    list-style: none;
+}
+
+.i-wont li{
     color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
     margin: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
-.tittle-position h3{
-    margin-left: 30px;
+.i-wont a{
+    text-decoration: none;
     color: white;
-    padding: 5px;
-    border-style: solid;
-    font-family: 'Roboto', sans-serif;
-    transition: 0.7s;
 }
 
-.tittle-position h3:hover{
+.i-wont h5{
+    border-style: solid;
+    padding: 5px;
+    transition: .3s;
+    transition-property: background;
+}
+
+.i-wont h5:hover{
     background-color: white;
     color: black;
-    font-family: 'Roboto', sans-serif;
     border-style: solid;
     border-color: white;
 }
 
-.tittle-position a{
-    text-decoration: none;
-    color: white;
+.sec-two-img{
+    background-image: url(section2-background.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
