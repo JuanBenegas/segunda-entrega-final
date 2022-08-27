@@ -31,6 +31,9 @@
 }
   .section-two{
      grid-area: section-two; 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
   .section3{
      grid-area: section3; 
@@ -102,9 +105,67 @@ body{
     border-color: white;
 }
 
+/* Section-two */
+
 .sec-two-img{
     background-image: url(section2-background.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.gradiant-sec-two{
+    height: 100%;
+    width: 100%;
+    background-color: #00000059;
+    z-index: 10;
+    position: relative;
+}
+
+.tour-container{
+    margin-top: 50px;
+    z-index: 500;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tour-container a{
+    border-style: solid;
+    padding: 2px;
+    border-color: white;
+    transition: .3s;
+    transition-property: background;
+}
+
+.tour-container a:hover{
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+
+.tour-container p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 4px 4px 3px black;
+}
+
+.tour-container-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height : 3px;
+}
+
+.tour{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+}
+
+.section-two a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
