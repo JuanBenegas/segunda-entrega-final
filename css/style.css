@@ -46,6 +46,8 @@
      display: flex;
      align-items: center;
      background-color: white;
+     justify-content: center;
+     flex-direction: column;
 }
 
 body{
@@ -236,3 +238,10 @@ body{
     color: black;
 }
 
+ol, ul {
+    padding-left: 0;
+}
+
+.footer ul{
+    list-style: none;
+}
