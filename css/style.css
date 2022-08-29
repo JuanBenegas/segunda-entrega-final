@@ -1,4 +1,5 @@
 /* Imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 
@@ -25,29 +26,34 @@
      grid-area: nav; 
 }
   .section1{
-     grid-area: section1;
-     background-color: #00000094;
-     z-index: 10;
+    grid-area: section1;
+    background-color: #00000094;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   .section-two{
-     grid-area: section-two; 
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+    grid-area: section-two; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
   .section-three{
-     grid-area: section-three; 
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+    grid-area: section-three; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
   .footer{
-     grid-area: footer; 
-     display: flex;
-     align-items: center;
-     background-color: white;
-     justify-content: center;
-     flex-direction: column;
+    grid-area: footer; 
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
 }
 
 body{
@@ -226,6 +232,8 @@ body{
     color: black;
 }
 
+/* FOOTER */
+
 .footer ul{
     list-style: none;
 }
@@ -244,4 +252,23 @@ ol, ul {
 
 .footer ul{
     list-style: none;
+}
+
+/* PAGE MUSIC */
+/* SECTION-ONE */
+
+.section1 iframe{
+    max-width: 100%;
+}
+
+/* SECTION-TWO */
+
+.section-two iframe{
+    max-width: 100%;
+}
+
+/* SECTION-THREE */
+
+.section-three iframe{
+    max-width: 100%;
 }
