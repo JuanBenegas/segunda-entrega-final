@@ -17,7 +17,7 @@
     /* gap: 0px 0px;  */
     grid-template-areas: 
       "nav"
-      "section1"
+      "section-one"
       "section-two"
       "section-three"
       "footer"; 
@@ -25,8 +25,8 @@
   .nav{ 
      grid-area: nav; 
 }
-  .section1{
-    grid-area: section1;
+  .section-one{
+    grid-area: section-one;
     background-color: #00000094;
     z-index: 10;
     display: flex;
@@ -71,7 +71,7 @@ body{
 
 /* MAIN */
 
-/* Section-one */
+/* SECTION-ONE */
 .contenedor{
     position: relative;
     max-width: 100%;
@@ -120,7 +120,7 @@ body{
     border-color: white;
 }
 
-/* Section-two */
+/* SECTION-TWO */
 
 .sec-two-img{
     background-image: url(section2-background.jpg);
@@ -185,7 +185,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* Section-three */
+/* SECTION-THREE */
 
 .sec-three-img{
     background-image: url(section-three-background.webp);
@@ -240,6 +240,7 @@ body{
 
 .footer li{
     display: inline-block;
+    margin: 5px;
 }
 
 .footer a{
@@ -254,10 +255,12 @@ ol, ul {
     list-style: none;
 }
 
+
 /* PAGE MUSIC */
+
 /* SECTION-ONE */
 
-.section1 iframe{
+.section-one iframe{
     max-width: 100%;
 }
 
@@ -271,4 +274,43 @@ ol, ul {
 
 .section-three iframe{
     max-width: 100%;
+}
+
+                                                                /* PAGE SOBRE-AJR */
+/* SECTION-ONE */
+
+.sec-one-background{
+    background-image: url(sobre-ajr/first-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+sec-one-tittle{
+    margin-top: 50px;
+    z-index: 500;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobreAJR-container h1{
+    
+    text-shadow: 0px 0px 13px black;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.sobreAJR-container p{
+    color: white;
+    margin: 25px;
+    border-style: double;
+    border-color: gray;
+    background-color: #000000a8;
+    padding: 10px;
 }
