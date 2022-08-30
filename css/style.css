@@ -72,6 +72,10 @@ body{
 /* MAIN */
 
 /* SECTION-ONE */
+
+/* Objetos ocultos Query 1024px */
+
+/* Objetos ocultos Query 1024px */
 .contenedor{
     position: relative;
     max-width: 100%;
@@ -119,6 +123,8 @@ body{
     border-style: solid;
     border-color: white;
 }
+
+
 
 /* SECTION-TWO */
 
@@ -346,6 +352,13 @@ sec-one-tittle{
 }
 
                                                                 /* PAGE VIVOS */
+
+.ajr-bang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .ajr-bang h3{
     color: white;
     padding: 30px;
@@ -356,4 +369,83 @@ sec-one-tittle{
 
 .ajr-bang iframe{
     max-width: 100%;
+}
+
+                                                                /* PAGE CONTACTO */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    color: white;
+    letter-spacing: 3px;
+}
+
+.contact label{
+    color: white;
+}
+
+.imgLogoAjr img{
+    max-width: 100%;
+}
+
+
+/* Obejtos ocultos para dispositivos chicos */
+@media (max-width: 768px){
+    .video-query{
+        display: none;
+    }
+}
+
+                                                                /* MEDIA QUERY */
+                                                                /* LAPTOP 1024px */
+
+@media (min-width: 1024px){
+
+    .grid-container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.2fr 1.7fr 1.7fr 1.7fr 0.4fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "nav nav"
+          "section-one section-one"
+          "section-two section-two"
+          "section-three section-three"
+          "footer footer"; 
+      }
+      .nav {
+         grid-area: nav; 
+    }
+      .section-one {
+         grid-area: section-one; 
+        
+      .section-two {
+         grid-area: section-two; 
+    }
+      .section-three {
+         grid-area: section-three; 
+    }
+      .footer {
+         grid-area: footer; 
+    }
+
+    .littleimg{
+        margin-left: 40px;
+        max-width: 5vw;
+    }
+
+    .contenedor video{
+        display: none;
+    }
+
+    .video-query{
+        max-width: 100%;
+    }
+
 }
