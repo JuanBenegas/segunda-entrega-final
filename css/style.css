@@ -256,7 +256,7 @@ ol, ul {
 }
 
 
-/* PAGE MUSIC */
+                                                                /* PAGE MUSIC */
 
 /* SECTION-ONE */
 
@@ -296,7 +296,6 @@ sec-one-tittle{
 }
 
 .sobreAJR-container h1{
-    
     text-shadow: 0px 0px 13px black;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
@@ -313,4 +312,48 @@ sec-one-tittle{
     border-color: gray;
     background-color: #000000a8;
     padding: 10px;
+}
+
+/* SECTION-TWO */
+
+.sec-two-background{
+    background-image: url(sobre-ajr/section-two-background.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sobreAJR-container ul{
+    list-style: none;
+}
+
+.sobreAJR-container li{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #000000c7;
+    padding: 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+/* SECTION-THREE */
+
+.sec-three-background{
+    background-image: url(sobre-ajr/section-two-background.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+                                                                /* PAGE VIVOS */
+.ajr-bang h3{
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ajr-bang iframe{
+    max-width: 100%;
 }
