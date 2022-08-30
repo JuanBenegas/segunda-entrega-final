@@ -399,6 +399,11 @@ sec-one-tittle{
     .video-query{
         display: none;
     }
+
+    .section-two-div-one{
+        display: none;
+    }
+
 }
 
                                                                 /* MEDIA QUERY */
@@ -418,15 +423,20 @@ sec-one-tittle{
           "section-two section-two"
           "section-three section-three"
           "footer footer"; 
-      }
+    }
       .nav {
-         grid-area: nav; 
+        grid-area: nav; 
+        position: sticky;
+        top: 0;
+        z-index: 500000;
     }
       .section-one {
          grid-area: section-one; 
-        
+    }
       .section-two {
-         grid-area: section-two; 
+        grid-area: section-two; 
+        flex-direction: row;
+        justify-content: space-around;
     }
       .section-three {
          grid-area: section-three; 
@@ -434,6 +444,8 @@ sec-one-tittle{
       .footer {
          grid-area: footer; 
     }
+
+    /* QUERY PAGE INDEX */
 
     .littleimg{
         margin-left: 40px;
@@ -445,7 +457,67 @@ sec-one-tittle{
     }
 
     .video-query{
-        max-width: 100%;
+        width: 100%;
     }
 
+    .video-query video{
+        width: 100%;
+    }
+
+    .i-wont{
+        margin-left: 50px;
+    }
+
+    .sec-two-img {
+        background-image: url(section-one-background-query.webp);
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    .section-two-div-one h1{
+        color: white;
+    }
+
+    .section-two-div-one ul{
+        list-style: none;
+    }
+
+    .section-two-div-one li{
+        color: white;
+        text-shadow: 3px 4px 4px black;
+    }
+
+    .section-two-div-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    .gira{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Obejtos ocultos para dispositivos grandes */
+    .tour-container{
+        display: none;
+    }
+
+    .gradiant-sec-two{
+        display: none;
+    }
+    /* Obejtos ocultos para dispositivos grandes */
 }
