@@ -404,6 +404,14 @@ sec-one-tittle{
         display: none;
     }
 
+    .music-query-div-one{
+        display: none;
+    }
+
+    #video-desktop{
+        display: none;
+    }
+
 }
 
                                                                 /* MEDIA QUERY */
@@ -431,7 +439,9 @@ sec-one-tittle{
         z-index: 500000;
     }
       .section-one {
-         grid-area: section-one; 
+         grid-area: section-one;
+         flex-direction: row;
+         justify-content: space-around;
     }
       .section-two {
         grid-area: section-two; 
@@ -500,6 +510,42 @@ sec-one-tittle{
         flex-direction: row;
     }
 
+    .section-three{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sec-three-img{
+        background-image: url(section-three-background-query.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .music-query{
+        display: flex;
+    }
+
+    .music-query-div-one{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .music-query-div-one h1{
+        display: inline-block;
+        color: white;
+    }
+
+    .music-query-div-one img{
+        max-width: 500px;
+    }
+
+    /* QUERY PAGE MUSIC */
+
+    #video-mobile{
+        display: none;
+    }
 
 
 
@@ -517,6 +563,10 @@ sec-one-tittle{
     }
 
     .gradiant-sec-two{
+        display: none;
+    }
+
+    .sec-three-container{
         display: none;
     }
     /* Obejtos ocultos para dispositivos grandes */
