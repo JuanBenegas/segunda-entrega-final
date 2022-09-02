@@ -395,7 +395,7 @@ sec-one-tittle{
 
 
 /* Obejtos ocultos para dispositivos chicos */
-@media (max-width: 768px){
+@media (max-width: 1023px){
     .video-query{
         display: none;
     }
@@ -408,7 +408,7 @@ sec-one-tittle{
         display: none;
     }
 
-    #video-desktop{
+    .video-desktop{
         display: none;
     }
 
