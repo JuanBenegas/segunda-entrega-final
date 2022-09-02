@@ -541,12 +541,18 @@ sec-one-tittle{
         max-width: 500px;
     }
 
+    .video-grande{
+        position: relative;
+        z-index: -20;
+    }
+
     /* QUERY PAGE MUSIC */
 
     #video-mobile{
         display: none;
     }
 
+    
 
 
 
